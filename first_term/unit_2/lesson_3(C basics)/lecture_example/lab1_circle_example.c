@@ -8,8 +8,10 @@
  */
 
 #include <stdio.h>
+#include "lab1_circle_example.h"
 #define pi 3.14
-int main()
+
+int circle(void)
 {
 	char choise;
 	float radius;

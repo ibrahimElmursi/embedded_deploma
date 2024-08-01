@@ -16,6 +16,7 @@ int main()
 //	circle(); //this is  lab1
 //	max_num(); //this is lab2
 //	min_num(); //this is lab3
-	sum_1_99();
+//	sum_1_99();
+	student_avg();
 	return 0;
 }

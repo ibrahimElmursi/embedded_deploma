@@ -6,11 +6,13 @@
  * 				the numbers from 1:99
  *
  */
+#include <stdio.h>
 
 int sum_1_99(void)
 {
-	int sum;
+	int sum=0;
 	for(char i=1;i<=99;i++)
 		sum+=i;
 	printf("the summation  of values (1:99) is : %d",sum);
+	return 0;
 }

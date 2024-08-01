@@ -9,10 +9,11 @@
 #include <stdio.h>
 #include "lab1_circle_example.h"
 #include "lab2_max_num_example.h"
-
+#include "lab3_min_num_example.h"
 int main()
 {
 //	circle(); //this is  lab1
-	max_num(); //this is lab2
+//	max_num(); //this is lab2
+	min_num(); //this is lab3
 	return 0;
 }

@@ -1,5 +1,5 @@
 /**
- * @name   : lab1_max_num_example.c
+ * @name   : lab2_max_num_example.c
  * @date   : Aug 1, 2024
  * @author : Eng.Ibrahim El-mursi
  * @brief  : this program is used to calculate the largest number between

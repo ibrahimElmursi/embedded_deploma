@@ -1,0 +1,10 @@
+int sum_num_digits(void);
+int find_sqr(void);
+int find_prime_numbers(int,int);
+int reverse_num_digits(void);
+int count_ones(void);
+int find_Unique_number(int[], int);
+int sum_1_to_n(int);
+int reverse_array(void);
+void reverse_string(void);
+void max_Ones_Between_Zeros(int);

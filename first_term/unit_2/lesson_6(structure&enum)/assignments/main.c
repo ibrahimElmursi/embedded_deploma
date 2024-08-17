@@ -12,6 +12,8 @@
 #include <stdlib.h>
 #include "main.h"
 
+# define get_area(r) 3.14*r*r
+
 struct Sstuudent /* this for HW5_ex1 */
 {
 	char name[50];
@@ -47,10 +49,24 @@ struct job1 {
 } s;
 /******* HW5_ex6 ********/
 
+#define print_bin(name,x) printf(name);\
+					 for(iter=(sizeof(int)*8)-1;iter>=0;iter--)\
+					 {\
+						 printf("%d",(x>>iter)&1);\
+					 }\
+					 printf("\n");
+struct st
+{
+	char ch[20];
 
-
+};
 int main()
 {
+	struct st bit;
+	strcpy(bit.ch,"hello");
+	printf("%s",bit.ch);
+	/*printf("%d \n %d \n %d \n %d \n",(int)sizeof(bit),bit.bit1,bit.bit3,bit.bit4);
+
 	/*printf("enter information of student:\n");
 	 struct Sstuudent student=store_info();
 	 printf("\n\ndisplaying information of student: \n");
@@ -61,8 +77,8 @@ int main()
 			add_complex(readComplex("clx1"),
 						readComplex("clx2"))); 	/* this for HW5_ex3 */
 	/*store_list_info(); 							/* this for HW5_ex4 */
-	/*print_circle_area(); 						/* this for HW5_ex5 */
-	print_sizeof_s_u(); 						/* this for HW5_ex6 */
+	/*print_circle_area(10); 						/* this for HW5_ex5 */
+	/*print_sizeof_s_u(); 						/* this for HW5_ex6 */
 
 	return EXIT_SUCCESS;
 }
@@ -227,9 +243,9 @@ int store_list_info(void)
 	}
 	printf("\n\ndisplaying information of student: \n");
 	for(i=0;i<3;i++)
-		{
+	{
 		print_info(students[i]);
-		}
+	}
 	return EXIT_SUCCESS;
 }
 /******************************** End HW5_ex4 ****************************/
@@ -237,15 +253,15 @@ int store_list_info(void)
 /******************************** start HW5_ex5 ****************************/
 /**
  * @brief   : This function to find area of a circle using macro function.
- * @param   : this function doesn't take any parameter.
+ * @param   : this function take an integer as parameter.
  * @return  : this returns 0 if the execution done correctly.
  * @code
  * 			  print_circle_area(10);
  * @endcode
  */
-int print_circle_area(void)
+int print_circle_area(float radius)
 {
-
+	printf("thea area of the circle = %d", get_area(radius));
 	return EXIT_SUCCESS;
 }
 /******************************** End HW5_ex5 ****************************/
